@@ -1,33 +1,131 @@
 /****** General ***********/
+
+html, body {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;      /* empêche l'image de dépasser son conteneur */
+  display: block;       /* évite l'espace fantôme sous l'image */
+}
+
 * {
     font-family: 'Raleway', sans-serif;
 }
 
-:root {
+:root {             /* variables CSS réutilisables partout */
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid {
+.fa-solid {      /* utilise la variable définie dans :root */
     color: var(--main-color);
 }
 
 body {
-    display: flex;
-    justify-content: center;
+    display: flex;              /* active Flexbox */
+    justify-content: center;    /* centre sur l'axe principal */
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* padding inclus dans la largeur */
 }
 
 a {
-    color: inherit;
+    color: inherit;      /* récupère la couleur du parent */
     text-decoration: none;
+}
+
+.sitelogo {   
+    display: flex;
+    align-items: center;             /* alignement sur l'axe secondaire */
+    justify-content: space-between;  /* 1er élément à gauche, dernier à droite */
+    padding: 0;
+}
+
+/* Logo */
+.logo img {
+    width: 70px;
+    height: auto;
+    margin: 0;
+}
+
+/* Navigation principale */
+.main-nav ul {
+    display: flex;
+    list-style: none;       /* retire les puces */
+    margin: 0;
+    padding: 0; 
+    gap: 60px;   
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: black;
+    border-top: 2px solid transparent;  /* réserve l'espace avant le survol */
+    padding-top: 8px;
+    transition: color 0.3s ease, border-top-color 0.3s ease;  /* anime le changement d'état */
+}
+    
+.main-nav a:hover {      /* état au survol */
+    color: #0065FC;
+    border-top-color: #0065FC;
+}
+
+.title-heber h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 6px;
+}
+      
+.title-heber p {
+    margin-bottom: 35px;
+    margin-top: 6px;    
+}
+
+.search-bar {
+    display: flex;
+    align-items: stretch;    /* étire les enfants sur toute la hauteur */
+    width: 390px;
+    height: 50px;
+    border: 1px solid #e2e2e2;
+    border-radius: 20px;
+    overflow: hidden;        /* cache ce qui dépasse de la boîte */
+    margin-bottom: 35px;
+}
+
+.search-bar i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    background-color: #f8f8f8;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.search-bar input {
+    flex: 1;      /* prend tout l'espace restant */
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+    
+.search-bar input::placeholder {   /* cible le texte d'exemple grisé */
+    color: black;
+    transition: opacity 0.3s ease;
+}
+    
+.search-bar input:focus::placeholder {  /* placeholder, mais seulement si le champ est actif */
+    opacity: 0;
 }
 
 .section-title {
