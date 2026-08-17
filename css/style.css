@@ -289,7 +289,7 @@ a {
 
 .hebergements-list .card img {
     width: 100%;
-    height: 110px;
+    height: 100px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -380,7 +380,58 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Activités à Marseille ***********/
+.activities-section {
+  margin-top: 30px;
+  padding: 30px;
+  box-sizing: border-box;
+}
 
+.activities-section h2 {
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+
+.activities-cards {
+  display: flex;
+  flex-wrap: wrap;    /* autorise le retour à la ligne */
+  gap: 25px;
+}
+
+.activities-cards a {
+  text-decoration: none;
+  width: calc(25% - 20px);   /* largeur qui tient compte du gap */
+  display: block;
+  color: inherit;
+}
+
+.activities-cards .actcard {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;      /* occupe toute la hauteur du parent */
+}
+
+.activities-cards .actcard img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: block;
+}
+
+.activities-cards .actcard h3 {
+  margin: 0;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
