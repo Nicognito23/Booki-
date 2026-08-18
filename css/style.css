@@ -1,7 +1,7 @@
 /****** General ***********/
 
 html, body {
-  margin: 0;
+  margin-bottom: 0;
   padding: 0;
 }
 
@@ -311,7 +311,7 @@ a {
     line-height: 1.3em;
     height: 2.6em;                 /* réserve toujours 2 lignes */
     display: -webkit-box;          /* requis pour line-clamp */
-    -webkit-line-clamp: 2;         /* limite à 2 lignes, tronque avec "..." */
+    -webkit-line-clamp: 2;         /* limite à 2 lignes, tronque avec */
     line-clamp: 2;                 /* version standard */
     -webkit-box-orient: vertical;  /* direction du line-clamp */
     overflow: hidden;
@@ -327,7 +327,7 @@ a {
 
 .more {
     display: block;
-    margin-top: 15px;      
+    margin-top: 35px;      
     margin-left: 5px;
     font-weight: bold;
     font-size: 1.2rem;
@@ -432,6 +432,24 @@ a {
   font-weight: 600;
   color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
