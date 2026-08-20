@@ -485,12 +485,28 @@ a {
         gap: 15px;
     }
 
+    .filter li {
+    white-space: nowrap;                      /* empêche le texte de repasser à la ligne */
+    gap: clamp(8px, 1.5vw, 15px);
+    padding: clamp(8px, 1.2vw, 12px) clamp(10px, 1.5vw, 17px);
+    font-size: clamp(1.1rem, 1.5vw, 1.1rem);
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements {
         width: 100%;
+    }
+
+    .hebergements-list {
+        gap: 20px;
+    }
+
+    .hebergements-list .card img {
+        height: 105px;
+        object-fit: cover;
     }
 
     .populaires {
@@ -514,6 +530,19 @@ a {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    /* Activités à Marseille - même logique Grid que le desktop, on ajuste juste ce qui change */
+    .activities-cards {
+        gap: 20px;
+    }
+
+    .activities-cards .actcard img {
+        height: 200px;
+    }
+
+    .activities-cards .actcard h3 {
+        padding: 15px 19px;
     }
 }
 
