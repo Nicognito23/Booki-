@@ -486,10 +486,10 @@ a {
     }
 
     .filter li {
-    white-space: nowrap;                      /* empêche le texte de repasser à la ligne */
-    gap: clamp(8px, 1.5vw, 15px);
-    padding: clamp(8px, 1.2vw, 12px) clamp(10px, 1.5vw, 17px);
-    font-size: clamp(1.1rem, 1.5vw, 1.1rem);
+        white-space: nowrap;                      /* empêche le texte de repasser à la ligne */
+        gap: clamp(8px, 1.5vw, 15px);
+        padding: clamp(8px, 1.2vw, 12px) clamp(10px, 1.5vw, 17px);
+        font-size: clamp(1.1rem, 1.5vw, 1.1rem);
     }
 
     .hebergements-and-populaires {
@@ -534,15 +534,23 @@ a {
 
     /* Activités à Marseille - même logique Grid que le desktop, on ajuste juste ce qui change */
     .activities-cards {
-        gap: 20px;
+        gap: clamp(12px, 2vw, 20px);
     }
 
     .activities-cards .actcard img {
-        height: 200px;
+        height: clamp(150px, 20vw, 200px);
     }
 
     .activities-cards .actcard h3 {
-        padding: 15px 19px;
+        padding: clamp(10px, 1.5vw, 15px) clamp(12px, 1.8vw, 19px);
+    }
+
+    .condition {
+        gap: 15%;
+    }
+
+    .condition-column h3 {
+    font-size: clamp(15px, 1.8vw, 18px);
     }
 }
 
