@@ -556,6 +556,7 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
     .main-nav a {
     display: block;
     width: 100%;
@@ -566,35 +567,64 @@ a {
     padding-bottom: 16px;
   }
 
-  .main-nav a:hover {
-    border-bottom-color:var(--main-color);
-    border-top: none;
-  }
+    .main-nav a:hover {
+        border-bottom-color:var(--main-color);
+        border-top: none;
+    }
 
-  .sitelogo {
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-  }
+    .sitelogo {
+        flex-direction: column;
+        align-items: center;
+        gap: 34px;
+    }
 
-  .main-nav {
-    width: 100%;
-  }
+    .main-nav {
+        width: 100%;
+    }
 
-  .main-nav ul {
-    justify-content: center;
-    gap: 0;
-    border-bottom: 1px solid #d9d9d9;
-  }
+    .main-nav ul {
+        justify-content: center;
+        gap: 0;
+        border-bottom: 1px solid #d9d9d9;
+    }
 
-  .main-nav li {
-    flex: 1;
-  }
+    .main-nav li {
+        flex: 1;
+    }
 
-  .main-nav li:first-child a {   /* cible le li, pas le a */
-    color: var(--main-color);
-    border-bottom-color: var(--main-color);
-    font-weight: 700;
-  }
+    .main-nav li:first-child a {   /* cible le li, pas le a */
+        color: var(--main-color);
+        border-bottom-color: var(--main-color);
+        font-weight: 700;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: 330px;
+        min-width: 0;
+        margin: 0 0 35px 0;
+    }
+
+    .search-bar input {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .search-bar button {
+        width: 50px;
+        font-size: 0;     /* masque le texte, garde l'icône */
+        padding: 0;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-bar button::before {    /* contenu généré par CSS */
+        content: "\f002";             /* code icône Font Awesome */
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        font-size: 1.1rem;
+    }
 
 }
