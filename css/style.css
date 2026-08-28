@@ -600,7 +600,7 @@ a {
 
     .search-bar {
         width: 100%;
-        max-width: 330px;
+        max-width: 350px;
         min-width: 0;
         margin: 0 0 35px 0;
     }
@@ -624,6 +624,31 @@ a {
         content: "\f002";             /* code icône Font Awesome */
         font-family: "Font Awesome 6 Free";
         font-weight: 900;
+        font-size: 1.1rem;
+    }
+
+    .filter {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .filter ul {
+        display: grid;                          /* bascule flex → grid */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        width: 100%;
+    }
+
+    .filter li {
+        width: 70%;                            /* remplit toute la colonne, comme sur la maquette */
+        justify-content: left;
+        gap: 8px;
+        font-size: 0.9rem;
+        padding: 10px 14px;
+    }
+
+    .filter li i {
         font-size: 1.1rem;
     }
 
