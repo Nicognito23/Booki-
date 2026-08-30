@@ -732,4 +732,31 @@ a {
         margin-bottom: -12px;
     }
 
+    .activities-section h2 {
+        padding-left: 5px; 
+    }
+
+    .activities-cards {
+        grid-template-columns: 1fr;   /* 1 seule colonne en mobile, au lieu de flex-direction */
+        gap: 20px;
+}
+
+    .activities-cards a {
+        width: 100%;
+    }
+
+    .activities-cards .actcard {
+        width: 100%;
+        height: auto;
+    }
+
+    .activities-cards .actcard img {
+        height: 150px; 
+    }
+
+    .activities-cards .actcard h3 {
+        font-size: 1rem;
+        padding: 14px 19px;
+    }
+
 }
