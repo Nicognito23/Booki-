@@ -314,11 +314,9 @@ a {
     height: 2.6rem;               /* réserve toujours 2 lignes */
     display: -webkit-box;          /* requis pour line-clamp */
     -webkit-line-clamp: 2;         /* limite à 2 lignes, tronque avec */
-    line-clamp: 2;                 /* version standard */
     -webkit-box-orient: vertical;  /* direction du line-clamp */
     overflow: hidden;
 }
-
   
 .hebergements-list .card-subtitle {
     margin: 0;
@@ -757,6 +755,25 @@ a {
     .activities-cards .actcard h3 {
         font-size: 1rem;
         padding: 14px 19px;
+    }
+
+    .condition-column {
+        max-width: 100%;
+    }
+
+    .condition {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .condition-column h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .condition-column ul li {
+        margin-bottom: 12px;
     }
 
 }
