@@ -668,6 +668,17 @@
         gap: 24px; 
     }
 
+    .hebergements-and-populaires .populaires {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        border-radius: 0;
+    }
+
+    .hebergements-and-populaires .hebergements {
+        background-color: transparent;
+        padding: 0;
+    }
+
     .populaires {
         order: -1;    /* change l'ordre visuel, pas le HTML */
         width: 100%;
