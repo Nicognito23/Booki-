@@ -110,6 +110,7 @@
 
     .search-bar input {
         flex: 1;      /* prend tout l'espace restant */
+        min-width: 0;
         border: none;
         outline: none;
         font-size: 1.1rem;
@@ -135,6 +136,8 @@
         cursor: pointer;       /* curseur en main cliquable */
         font-size: 1rem;
         transition: background-color 0.3s ease;
+        white-space: nowrap;   /* nouvelle ligne */
+        flex-shrink: 0;        /* nouvelle ligne */
     }
         
     .search-bar button:hover {
