@@ -738,6 +738,10 @@
         margin-bottom: -12px;
     }
 
+    .activities-section {
+        padding: 30px 0;
+    }
+
     .activities-section h2 {
         padding-left: 5px; 
     }
