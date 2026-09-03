@@ -773,10 +773,13 @@
         max-width: 100%;
     }
 
-    .condition {
+   .condition {
         flex-direction: column;
         padding: 30px 20px;
         gap: 30px;
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        border-radius: 0;
     }
 
     .condition-column h3 {
